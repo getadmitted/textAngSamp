@@ -1,0 +1,18 @@
+<div id="todo-form" class="row">
+	<div class="col-sm-8 col-sm-offset-2 text-center">
+		<form>
+			<div class="form-group">
+
+				<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+				<input type="text" class="form-control text-center" placeholder="mm/dd/yy" ng-model="formData.date">
+				<input type="text" class="form-control text-center" placeholder="Amazon.com" ng-model="formData.store">
+				<input type="text" class="form-control text-center" placeholder="socks" ng-model="formData.desc">
+				<input type="text" class="form-control text-center" placeholder="29.99" ng-model="formData.price">
+				<input type="text" class="form-control text-center" placeholder="1234" ng-model="formData.cardNo">
+			</div>
+
+			<!-- createToDo() WILL CREATE NEW TODOS -->
+			<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
+		</form>
+	</div>
+</div>
